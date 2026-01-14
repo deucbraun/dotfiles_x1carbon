@@ -1,0 +1,56 @@
+/* Waybar Base Styling */
+window#waybar {
+    background-color: rgba(45, 50, 70, 0.9);  /* Dunkler Pastel-Blau */
+    color: #f8f8f2;
+    border-radius: 0px;
+    border: none;
+}
+
+/* Alternative Farben (auskommentiert):
+   rgba(50, 45, 65, 0.9)   - Dunkler Pastel-Lila
+   rgba(45, 65, 50, 0.9)   - Dunkler Pastel-Grün  
+   rgba(65, 50, 45, 0.9)   - Dunkler Pastel-Braun
+*/
+
+#workspaces {
+  background: transparent;
+  margin: 5px;
+  padding: 0px;
+}
+
+#workspaces button {
+  padding: 0 8px;
+  margin: 0 2px;
+  background-color: #282a36;
+  color: #6272a4;
+  border: 2px solid #44475a;
+  border-radius: 8px;
+  min-width: 30px;
+  transition: all 0.3s ease;
+}
+
+#workspaces button.active {
+  background-color: #00ff99;
+  color: #282a36;
+  border-color: #00ff99;
+  font-weight: bold;
+}
+
+#workspaces button.occupied {
+  background-color: #44475a;
+  color: #f8f8f2;
+  border-color: #6272a4;
+}
+
+#workspaces button:hover {
+  background-color: #6272a4;
+  color: #f8f8f2;
+  border-color: #8be9fd;
+}
+
+#workspaces button.urgent {
+  background-color: #ff5555;
+  color: #f8f8f2;
+  border-color: #ff5555;
+  box-shadow: 0 0 10px #ff5555;
+}

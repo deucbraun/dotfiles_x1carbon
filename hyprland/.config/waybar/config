@@ -1,0 +1,107 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 30,
+  "spacing": 8,
+  "modules-left": ["hyprland/workspaces", "hyprland/window"],
+  "modules-center": ["clock"],
+  "modules-right": ["tray", "idle_inhibitor", "backlight", "pulseaudio", "battery"],
+  "tray": {
+    "icon-size": 21,
+    "spacing": 10
+  },
+
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "1": "1",
+      "2": "2", 
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "urgent": "❗",
+      "focused": "",
+      "default": ""
+    },
+    "persistent-workspaces": {
+      "*": 5
+    }
+  },
+  
+  "hyprland/window": {
+    "format": "{title}",
+    "max-length": 50,
+    "separate-outputs": true
+  },
+  
+  "clock": {
+    "format": "{:%H:%M   %d.%m.%Y}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+  },
+  
+  "battery": {
+    "states": {
+      "good": 95,
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{icon} {capacity}%",
+    "format-charging": "⚡ {capacity}%",
+    "format-plugged": "🔌 {capacity}%",
+    "format-alt": "{icon} {time}",
+    "format-full": "🔋 Full",
+    "format-icons": ["🪫", "🔋", "🔋", "🔋", "🔋"],
+    "tooltip-format": "{timeTo}"
+  },
+  
+  "bluetooth": {
+    "format": "BT 🔵 {status}",
+    "format-disabled": "BT ⊗ Off",
+    "format-off": "BT ⊗ Off", 
+    "format-on": "BT 🔵 On",
+    "format-connected": "BT 🔵 {device_alias}",
+    "format-connected-battery": "BT 🔵 {device_alias} {device_battery_percentage}%",
+    "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+    "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+    "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
+    "on-click": "blueman-manager",
+    "on-click-right": "~/.config/hypr/scripts/bluetooth-toggle.sh"
+  },
+  
+  "backlight": {
+    "device": "intel_backlight",
+    "format": "{icon} {percent}%",
+    "format-icons": ["🔅", "🔆"],
+    "tooltip-format": "Brightness: {percent}%",
+    "on-scroll-up": "brightnessctl set 5%+",
+    "on-scroll-down": "brightnessctl set 5%-",
+    "smooth-scrolling-threshold": 1
+  },
+  
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": "🔇 {volume}%",
+    "format-icons": {
+      "headphone": "🎧",
+      "hands-free": "🎧",
+      "headset": "🎧",
+      "phone": "📱",
+      "portable": "🔊",
+      "car": "🚗",
+      "default": ["🔈", "🔉", "🔊"]
+    },
+    "on-click": "pavucontrol",
+    "tooltip-format": "Volume: {volume}%"
+  },
+  
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+      "activated": "🔒",
+      "deactivated": "🔓"
+    },
+    "tooltip-format-activated": "Idle inhibitor: ON",
+    "tooltip-format-deactivated": "Idle inhibitor: OFF"
+  }
+}
