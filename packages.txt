@@ -20,6 +20,7 @@ bitwarden
 blueman
 bluez
 bluez-utils
+bolt
 borg
 brightnessctl
 btrfs-progs
