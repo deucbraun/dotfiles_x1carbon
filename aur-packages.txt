@@ -1,4 +1,3 @@
-android-studio
 brave-bin
 claude-code
 claude-desktop-bin
