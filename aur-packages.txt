@@ -1,6 +1,7 @@
 brave-bin
 claude-code
 claude-desktop-bin
+earbuds
 electron25-bin
 gtk2
 lib32-gtk2
