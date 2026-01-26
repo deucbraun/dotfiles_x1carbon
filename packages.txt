@@ -61,6 +61,7 @@ eos-rankmirrors
 esptool
 ethtool
 evtest
+ex-vi-compat
 exfatprogs
 eza
 f2fs-tools
@@ -228,7 +229,6 @@ unzip
 upower
 usb_modeswitch
 usbutils
-vi
 waybar
 webkit2gtk
 welcome
