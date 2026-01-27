@@ -252,6 +252,7 @@ xorg-xinit
 xorg-xinput
 xorg-xkill
 xorg-xrandr
+xournalpp
 xterm
 yay
 yubico-pam
