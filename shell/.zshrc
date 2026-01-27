@@ -123,3 +123,6 @@ export NVM_DIR="$HOME/.nvm"
 # IBKR TWS für Hyprland
     export _JAVA_AWT_WM_NONREPARENTING=1
 export PATH="$HOME/.local/bin:$PATH"
+
+#claude tmp location
+export TMPDIR=~/.claude/tmp
