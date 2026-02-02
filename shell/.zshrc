@@ -126,3 +126,6 @@ export PATH="$HOME/.local/bin:$PATH"
 
 #claude tmp location
 export TMPDIR=~/.claude/tmp
+
+# OpenClaw Completion
+source <(openclaw completion --shell zsh)

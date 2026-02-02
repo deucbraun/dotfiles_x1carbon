@@ -79,6 +79,7 @@ fprintd
 fwupd
 ghostscript
 git
+github-cli
 glances
 gnucash
 gnucash-docs
